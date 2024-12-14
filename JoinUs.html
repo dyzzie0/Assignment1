@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cantor College offers programs in Computing, Design, and more. Join us today!">
+    <link rel="stylesheet" href="Styles/desktop.css">
+    <link rel="stylesheet" href="Styles/mobile.css">
+    <link rel="stylesheet" href="Styles/forms.css">
+    <script src="JavaScript/main.js" defer></script>
+    <title>Cantor College Website</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">
+                <img src="Images/Cantor College.png" alt="Cantor College Logo" id="logo">
+            </a>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="InfoForStudents.html" class="nav-link">Info For Students</a>
+                </li>
+                <li class="nav-item">
+                    <a href="InfoForStaff.html" class="nav-link">Info For Staff</a>
+                </li>
+                <li class="nav-item">
+                    <a href="InfoForBusiness.html" class="nav-link">Info For Business</a>
+                </li>
+                <li class="nav-item">
+                    <a href="Contact.html" class="nav-link">Contact Us</a>
+                </li>
+            </ul>
+
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+<body>
+    <div class="Join-form-container">
+        <h3>Join Us Today</h3>
+        <form id="JoinForm">
+            <div class="Join-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+                <span class="error-message" id="nameError"></span>
+            </div>
+            <div class="Join-group">
+                <label for="Ucas">Ucas Number</label>
+                <input type="ucas" id="ucas" name="ucas" placeholder="Ucas Number" required>
+                <span class="error-message" id="ucasError"></span>
+            </div>
+            <div class="Join-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+                <span class="error-message" id="emailError"></span>
+            </div>
+            <div class="Join-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                <span class="error-message" id="phoneError"></span>
+            </div>
+            <div class="Join-group">
+                <label>Gender</label>
+                <div class="gender-options">
+                    <label class="gender-option">
+                        <input type="radio" name="gender" value="male" required>
+                        <span>Male</span>
+                    </label>
+                    <label class="gender-option">
+                        <input type="radio" name="gender" value="female">
+                        <span>Female</span>
+                    </label>
+                    <label class="gender-option">
+                        <input type="radio" name="gender" value="other">
+                        <span>Other</span>
+                    </label>
+                    <label class="gender-option">
+                        <input type="radio" name="gender" value="na">
+                        <span>Prefer not to say</span>
+                    </label>
+                </div>
+                <span class="error-message" id="genderError"></span>
+            </div>
+            
+            <div class="Join-group">
+                <label for="ethnicity">Ethnicity</label>
+                <select id="ethnicity" name="ethnicity" required>
+                    <option value="" disabled selected>Select your ethnicity</option>
+                    <optgroup label="Asian or Asian British">
+                        <option value="indian">Indian</option>
+                        <option value="pakistani">Pakistani</option>
+                        <option value="bangladeshi">Bangladeshi</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="other-asian">Any other Asian background</option>
+                    </optgroup>
+                    <optgroup label="Black, Black British, Caribbean or African">
+                        <option value="caribbean">Caribbean</option>
+                        <option value="african">African</option>
+                        <option value="other-black">Any other Black, Black British, or Caribbean background</option>
+                    </optgroup>
+                    <optgroup label="Mixed or Multiple Ethnic Groups">
+                        <option value="white-black-caribbean">White and Black Caribbean</option>
+                        <option value="white-black-african">White and Black African</option>
+                        <option value="white-asian">White and Asian</option>
+                        <option value="other-mixed">Any other Mixed or multiple ethnic background</option>
+                    </optgroup>
+                    <optgroup label="White">
+                        <option value="english">English, Welsh, Scottish, Northern Irish or British</option>
+                        <option value="irish">Irish</option>
+                        <option value="gypsy">Gypsy or Irish Traveller</option>
+                        <option value="roma">Roma</option>
+                        <option value="other-white">Any other White background</option>
+                    </optgroup>
+                    <optgroup label="Other Ethnic Group">
+                        <option value="arab">Arab</option>
+                        <option value="other-ethnic">Any other ethnic group</option>
+                        <option value="Preferred not to say">Preferred not to say</option>
+                    </optgroup>
+                </select>
+                <span class="error-message" id="ethnicityError"></span>
+            </div>
+
+            <div class="Join-group">
+                <label for="nationality">Nationality</label>
+                <select id="nationality" name="nationality" required>
+                    <option value="" disabled selected>Select your nationality</option>
+                  
+                        <option value="afghan">Afghan</option>
+                        <option value="albanian">Albanian</option>
+                        <option value="algerian">Algerian</option>
+                        <option value="american">American</option>
+                        <option value="andorran">Andorran</option>
+                        <option value="angolan">Angolan</option>
+                        <option value="anguillan">Anguillan</option>
+                        <option value="antigua-barbuda">Citizen of Antigua and Barbuda</option>
+                        <option value="argentine">Argentine</option>
+                        <option value="armenian">Armenian</option>
+                        <option value="australian">Australian</option>
+                        <option value="austrian">Austrian</option>
+                        <option value="azerbaijani">Azerbaijani</option>
+                    </optgroup>
+              
+                        <option value="bahamian">Bahamian</option>
+                        <option value="bahraini">Bahraini</option>
+                        <option value="bangladeshi">Bangladeshi</option>
+                        <option value="barbadian">Barbadian</option>
+                        <option value="belarusian">Belarusian</option>
+                        <option value="belgian">Belgian</option>
+                        <option value="belizean">Belizean</option>
+                        <option value="beninese">Beninese</option>
+                        <option value="bermudian">Bermudian</option>
+                        <option value="bhutanese">Bhutanese</option>
+                        <option value="bolivian">Bolivian</option>
+                        <option value="bosnia">Citizen of Bosnia and Herzegovina</option>
+                        <option value="botswanan">Botswanan</option>
+                        <option value="brazilian">Brazilian</option>
+                        <option value="british">British</option>
+                        <option value="british-virgin-islander">British Virgin Islander</option>
+                        <option value="bruneian">Bruneian</option>
+                        <option value="bulgarian">Bulgarian</option>
+                        <option value="burkinan">Burkinan</option>
+                        <option value="burmese">Burmese</option>
+                        <option value="burundian">Burundian</option>
+                    </optgroup>
+                 
+                        <option value="cambodian">Cambodian</option>
+                        <option value="cameroonian">Cameroonian</option>
+                        <option value="canadian">Canadian</option>
+                        <option value="cape-verdean">Cape Verdean</option>
+                        <option value="cayman-islander">Cayman Islander</option>
+                        <option value="central-african">Central African</option>
+                        <option value="chadian">Chadian</option>
+                        <option value="chilean">Chilean</option>
+                        <option value="chinese">Chinese</option>
+                        <option value="colombian">Colombian</option>
+                        <option value="comoran">Comoran</option>
+                        <option value="congolese-congo">Congolese (Congo)</option>
+                        <option value="congolese-drc">Congolese (DRC)</option>
+                        <option value="cook-islander">Cook Islander</option>
+                        <option value="costa-rican">Costa Rican</option>
+                        <option value="croatian">Croatian</option>
+                        <option value="cuban">Cuban</option>
+                        <option value="cymraes">Cymraes</option>
+                        <option value="cymro">Cymro</option>
+                        <option value="cypriot">Cypriot</option>
+                        <option value="czech">Czech</option>
+                    </optgroup>
+           
+                        <option value="danish">Danish</option>
+                        <option value="djiboutian">Djiboutian</option>
+                        <option value="dominican">Dominican</option>
+                        <option value="dominican-republic">Citizen of the Dominican Republic</option>
+                        <option value="dutch">Dutch</option>
+                    </optgroup>
+              
+                        <option value="east-timorese">East Timorese</option>
+                        <option value="ecuadorean">Ecuadorean</option>
+                        <option value="egyptian">Egyptian</option>
+                        <option value="emirati">Emirati</option>
+                        <option value="english">English</option>
+                        <option value="equatorial-guinean">Equatorial Guinean</option>
+                        <option value="eritrean">Eritrean</option>
+                        <option value="estonian">Estonian</option>
+                        <option value="ethiopian">Ethiopian</option>
+                    </optgroup>
+                   
+                        <option value="faroese">Faroese</option>
+                        <option value="fijian">Fijian</option>
+                        <option value="filipino">Filipino</option>
+                        <option value="finnish">Finnish</option>
+                        <option value="french">French</option>
+                    </optgroup>
+            
+                        <option value="gabonese">Gabonese</option>
+                        <option value="gambian">Gambian</option>
+                        <option value="georgian">Georgian</option>
+                        <option value="german">German</option>
+                        <option value="ghanaian">Ghanaian</option>
+                        <option value="gibraltarian">Gibraltarian</option>
+                        <option value="greek">Greek</option>
+                        <option value="greenlandic">Greenlandic</option>
+                        <option value="grenadian">Grenadian</option>
+                        <option value="guamanian">Guamanian</option>
+                        <option value="guatemalan">Guatemalan</option>
+                        <option value="guinea-bissau">Citizen of Guinea-Bissau</option>
+                        <option value="guinean">Guinean</option>
+                        <option value="guyanese">Guyanese</option>
+                    </optgroup>
+                  
+                    
+                        <option value="haitian">Haitian</option>
+                        <option value="honduran">Honduran</option>
+                        <option value="hong-konger">Hong Konger</option>
+                        <option value="hungarian">Hungarian</option>
+                    </optgroup>
+               
+                        <option value="icelandic">Icelandic</option>
+                        <option value="indian">Indian</option>
+                        <option value="indonesian">Indonesian</option>
+                        <option value="iranian">Iranian</option>
+                        <option value="iraqi">Iraqi</option>
+                        <option value="irish">Irish</option>
+                        <option value="israeli">Israeli</option>
+                        <option value="italian">Italian</option>
+                        <option value="ivorian">Ivorian</option>
+                    </optgroup>
+            
+                        <option value="jamaican">Jamaican</option>
+                        <option value="japanese">Japanese</option>
+                        <option value="jordanian">Jordanian</option>
+                    </optgroup>
+               
+                        <option value="kazakh">Kazakh</option>
+                        <option value="kenyan">Kenyan</option>
+                        <option value="kittitian">Kittitian</option>
+                        <option value="kiribati">Citizen of Kiribati</option>
+                        <option value="kosovan">Kosovan</option>
+                        <option value="kuwaiti">Kuwaiti</option>
+                        <option value="kyrgyz">Kyrgyz</option>
+                    </optgroup>
+                    
+                        <option value="lao">Lao</option>
+                        <option value="latvian">Latvian</option>
+                        <option value="lebanese">Lebanese</option>
+                        <option value="liberian">Liberian</option>
+                        <option value="libyan">Libyan</option>
+                        <option value="liechtenstein">Liechtenstein citizen</option>
+                        <option value="lithuanian">Lithuanian</option>
+                        <option value="luxembourger">Luxembourger</option>
+                    </optgroup>
+               
+                        <option value="macanese">Macanese</option>
+                        <option value="macedonian">Macedonian</option>
+                        <option value="malagasy">Malagasy</option>
+                        <option value="malawian">Malawian</option>
+                        <option value="malaysian">Malaysian</option>
+                        <option value="other">Other</option>
+                        <option value="Preferred not to say">Preferred not to say</option>
+                        </optgroup>
+                    </select>
+                    <span class="error-message" id="ethnicityError"></span>
+                </div>
+            
+                
+            
+            
+                <label for="interest">Course</label>
+                  <select name="interest" id="interest">
+                    <option value="" disabled selected>Select your course</option>
+                    <option value="Undergraduate">Computing</option>
+                    <option value="Undergraduate">Computing with Foundation Year</option>
+                    <option value="Undergraduate">Cyber Security with Forencics</option>
+                    <option value="Undergraduate">Cyber security with Forencics with Foundation Year</option>
+                    <option value="Undergraduate">Computer Science with Games</option>
+                    <option value="Undergraduate">Computer Science for Games with Foundation Year</option>
+                    <option value="Undergraduate">Software Engineering</option>
+                    <option value="Undergraduate">Software Engineerign with Foundation Year</option>
+                    <option value="Undergraduate">Computer Science</option>
+                    <option value="Undergraduate">Computer Networks</option>
+                    <option value="Undergraduate">Information Technology with Business Studies</option>
+                    <option value="Undergraduate">Computer Science with Foundation Year</option>
+                    <option value="Undergraduate">Cyber Security with Foundation Year</option>
+                    <option value="Undergraduate">Business and Digital Technology with Foundation Year</option>
+    
+                    <option value="Postgraduate">Computing- Postgraduate</option>
+                    <option value="Postgraduate">Computing and Informatics- Postgraduate</option>
+                    <option value="Postgraduate">Cyber Security- Postgraduate</option>
+                  
+                    <option value="Undergraduate">Graphic Design</option>
+                    <option value="Undergraduate">Interior Architecture and Design</option>
+                    <option value="Undergraduate">Jewellery, Materials and Design </option>
+                    <option value="Undergraduate">Game Design and Development</option>
+                    <option value="Undergraduate">Product Design</option>
+                    <option value="Undergraduate">Product Design</option>
+                    <option value="Undergraduate">Digital Media Production</option>
+                </select>
+                <span class="error-message" id="interestError"></span>
+
+        
+            <button type="submit" class="submit-button" onclick="displayText()">Submit</button>
+            
+            <div id="textField" style="display: none;">
+                <p>Must fill in all fields to submit the form.</p>
+            </div>
+        </form>
+    </div>
+
+    <div class="footer">
+        <div class="col-1">
+            <h4>Useful Links</h4><br>
+            <a href="index.html">Home</a><br>
+            <a href="InfoForStudents.html">Info For Students</a><br>
+            <a href="InfoForStaff.html">Info For Staff</a><br>
+            <a href="InfoForBusiness.html">Info For Business</a><br>
+            <a href="Contact.html">Contact Us</a><br>
+            <a href="Facilites.html">Facilities</a><br>
+            <a href="Courses.html">Courses</a><br>
+            <a href="Resources.html">Resources</a><br>
+        </div>
+
+        <div class="col-2">
+                <a href="JoinUs.html" class="button">Join Us Today</a>
+        </div>
+
+        <div class="col-3">
+            <h4>How to find us</h4><br><br>
+            Address: Main Street, Sheffield, SC4 2BB<br><br>
+            Tel: (01321) 2340 235<br><br>
+            Fax: (01321) 2340 236<br><br>
+            Email: info@cantorcollege.ac.uk<br><br>
+        </div>
+    </div>
+    
+    <footer class="copyright">
+        <p id="copyright">© 2024 Cantor College. All rights reserved.</p>
+    </footer>
+   
+</body>
+</html>
+    
+    
